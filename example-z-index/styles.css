@@ -1,0 +1,72 @@
+/*10.24*/
+:root {
+    --bg-color: hsl(180, 76%, 8%);
+    --text-color: wheat;
+    --sec-1-z-index: -1;
+    --section--idea-z-index: 0;
+}
+* {
+    box-sizing: border-box;
+}
+html, body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: sans-serif;
+}
+.t-center {
+    text-align: center;
+} 
+h2.subtitle {
+    opacity: 70%;
+    color: rgba(226, 152, 226, 0.644);
+    padding: 0 20px;
+    font-family: monospace;
+    letter-spacing: 2px;
+    line-height: 1.6;
+}
+.main {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 720px;
+    height: 100vh;
+    color: aliceblue;
+    border: 2px solid whitesmoke;
+
+}
+
+
+.main > section.about-me {
+    position: absolute;
+    background-color: #333;
+    width: 100%;
+    height: 100%;
+    z-index: var(--section--idea-z-index);
+
+}
+.main > section.idea {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    padding: 1px;
+    z-index: var(--sec-1-z-index);
+}
+.controls {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 60px;
+    z-index: 15;
+}
+
+#right {
+    transform: rotate(1.5turn);
+
+}
+
+.hud--title, .about--title {
+    font-family: monospace;
+    letter-spacing: 5px;
+}
